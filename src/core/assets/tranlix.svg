@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="tranlixBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="docFrontGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <filter id="iconGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#059669" flood-opacity="0.3"/>
+    </filter>
+    <filter id="docShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Container Box -->
+  <rect x="16" y="16" width="168" height="168" rx="46" fill="url(#tranlixBgGrad)" filter="url(#iconGlow)"/>
+
+  <!-- Decorative Background Subtly Curved Arc -->
+  <path d="M 30 140 Q 100 170 170 140" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Back Document Page (Original File) -->
+  <rect x="48" y="44" width="76" height="98" rx="10" fill="#FFFFFF" fill-opacity="0.35" transform="rotate(-8 86 93)"/>
+
+  <!-- Front Document Page (Translated Output File) -->
+  <rect x="74" y="52" width="80" height="104" rx="12" fill="url(#docFrontGrad)" filter="url(#docShadow)"/>
+
+  <!-- Folded Page Corner (Top Right) -->
+  <path d="M 134 52 L 154 72 L 134 72 Z" fill="#E2E8F0"/>
+
+  <!-- Document Line Content Indicators -->
+  <rect x="92" y="74" width="46" height="7" rx="3.5" fill="#059669"/>
+  <rect x="92" y="90" width="36" height="6" rx="3" fill="#10B981" fill-opacity="0.75"/>
+  <rect x="92" y="104" width="42" height="6" rx="3" fill="#94A3B8" fill-opacity="0.5"/>
+  <rect x="92" y="118" width="28" height="6" rx="3" fill="#94A3B8" fill-opacity="0.35"/>
+
+  <!-- AI Translation Sparkles (Top Left) -->
+  <path d="M 52 70 L 56 78 L 64 82 L 56 86 L 52 94 L 48 86 L 40 82 L 48 78 Z" fill="#F59E0B"/>
+  <path d="M 40 46 L 42 51 L 47 53 L 42 55 L 40 60 L 38 55 L 33 53 L 38 51 Z" fill="#FBBF24"/>
+  <circle cx="68" cy="48" r="3" fill="#FDE047"/>
+</svg>
