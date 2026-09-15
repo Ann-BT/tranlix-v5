@@ -123,7 +123,7 @@ export function Sidebar({ collapsed = false, onToggleCollapse }: SidebarProps) {
                     sx={{
                       fontWeight: active ? 700 : 600,
                       fontSize: "0.88rem",
-                      fontFamily: '"Lexend", sans-serif',
+                      fontFamily: '"Fira Code", monospace',
                       whiteSpace: "nowrap",
                       opacity: collapsed ? 0 : 1,
                       transition: "opacity 0.2s cubic-bezier(0.2, 0, 0, 1)",

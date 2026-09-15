@@ -124,7 +124,7 @@ export function TranslationForm() {
             startIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : <PlayArrow />}
             sx={{
               py: 1.6,
-              fontFamily: '"Lexend", sans-serif',
+              fontFamily: '"Fira Code", monospace',
               fontSize: "1.05rem",
               fontWeight: 800,
               borderRadius: "4px",

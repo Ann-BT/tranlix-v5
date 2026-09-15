@@ -43,7 +43,7 @@ export function PreflightMeta({
           variant="body2"
           sx={{
             fontWeight: 600,
-            fontFamily: '"Source Sans 3", sans-serif',
+            fontFamily: '"Fira Code", monospace',
             color: "text.primary",
             overflow: "hidden",
             textOverflow: "ellipsis",

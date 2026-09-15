@@ -55,7 +55,7 @@ export function RecentJobsList({ jobs }: Props) {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap",
-                        fontFamily: '"Source Sans 3", sans-serif',
+                        fontFamily: '"Fira Code", monospace',
                       }}
                     >
                       {rj.source_filename}

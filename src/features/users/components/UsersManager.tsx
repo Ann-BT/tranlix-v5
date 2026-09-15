@@ -60,7 +60,7 @@ function CreateUserDialog({ open, onClose }: { open: boolean; onClose: () => voi
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth maxWidth="xs">
-      <DialogTitle sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 600 }}>
+      <DialogTitle sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
         Thêm tài khoản mới
       </DialogTitle>
       <DialogContent>
@@ -116,7 +116,7 @@ export function UsersManager() {
       <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <GroupIcon sx={{ color: "primary.main" }} />
-          <Typography variant="h6" sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 600 }}>
+          <Typography variant="h6" sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
             Quản trị tài khoản
           </Typography>
         </Box>
@@ -124,7 +124,7 @@ export function UsersManager() {
           variant="contained"
           startIcon={<AddIcon />}
           onClick={() => setCreateOpen(true)}
-          sx={{ borderRadius: 2, fontFamily: '"Lexend", sans-serif' }}
+          sx={{ borderRadius: 2, fontFamily: '"Fira Code", monospace' }}
         >
           Thêm tài khoản
         </Button>
@@ -142,7 +142,7 @@ export function UsersManager() {
                     "& th": {
                       fontWeight: 700,
                       backgroundColor: "neutral.50",
-                      fontFamily: '"Lexend", sans-serif',
+                      fontFamily: '"Fira Code", monospace',
                       color: "text.secondary",
                       py: 1.5,
                     },

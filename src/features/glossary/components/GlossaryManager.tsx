@@ -68,7 +68,7 @@ function CreateGlossaryDialog({ open, onClose }: { open: boolean; onClose: () =>
 
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="xs">
-      <DialogTitle sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 600 }}>
+      <DialogTitle sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
         Tạo bộ thuật ngữ chuyên ngành mới
       </DialogTitle>
       <DialogContent>
@@ -258,7 +258,7 @@ function GlossaryDetail({ glossaryId }: { glossaryId: string }) {
                 "& th": { 
                   fontWeight: 700, 
                   backgroundColor: "neutral.50",
-                  fontFamily: '"Lexend", sans-serif',
+                  fontFamily: '"Fira Code", monospace',
                   color: "text.secondary",
                   py: 1.5,
                 } 
@@ -428,7 +428,7 @@ export function GlossaryManager() {
       <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <BookIcon sx={{ color: "primary.main" }} />
-          <Typography variant="h6" sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 600 }}>
+          <Typography variant="h6" sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
             Thuật ngữ chuyên ngành
           </Typography>
         </Box>
@@ -436,7 +436,7 @@ export function GlossaryManager() {
           variant="contained"
           startIcon={<AddIcon />}
           onClick={() => setCreateOpen(true)}
-          sx={{ borderRadius: 2, fontFamily: '"Lexend", sans-serif' }}
+          sx={{ borderRadius: 2, fontFamily: '"Fira Code", monospace' }}
         >
           Tạo bộ thuật ngữ mới
         </Button>
@@ -502,7 +502,7 @@ export function GlossaryManager() {
                   variant="body1"
                   sx={{ 
                     fontWeight: 600, 
-                    fontFamily: '"Lexend", sans-serif',
+                    fontFamily: '"Fira Code", monospace',
                     color: isOpen ? "primary.main" : "text.primary",
                     transition: "color 0.2s",
                   }}

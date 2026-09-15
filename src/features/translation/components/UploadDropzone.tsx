@@ -104,7 +104,7 @@ export function UploadDropzone({ file, onFile }: Props) {
           <Box sx={{ flexGrow: 1, overflow: "hidden" }}>
             <Typography
               sx={{
-                fontFamily: '"Lexend", sans-serif',
+                fontFamily: '"Fira Code", monospace',
                 fontWeight: 600,
                 fontSize: "1rem",
                 color: "text.primary",
@@ -154,7 +154,7 @@ export function UploadDropzone({ file, onFile }: Props) {
           <Box>
             <Typography
               sx={{
-                fontFamily: '"Lexend", sans-serif',
+                fontFamily: '"Fira Code", monospace',
                 fontWeight: 600,
                 fontSize: "1.1rem",
                 color: "text.primary",
