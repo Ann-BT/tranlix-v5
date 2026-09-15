@@ -29,6 +29,7 @@ export function DocumentDropzone({
   onFilesSelected,
 }: Props) {
   const disabled = isSubmitting || isAnalyzing || !canAddMore;
+  const hasFiles = totalFiles > 0;
 
   return (
     <>
@@ -43,30 +44,30 @@ export function DocumentDropzone({
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          minHeight: { xs: 230, sm: 270, md: 310 },
-          p: { xs: 3, md: 5 },
-          borderRadius: "12px",
-          border: "2.5px dashed",
+          minHeight: hasFiles ? { xs: 90, md: 110 } : { xs: 260, md: 320 },
+          p: hasFiles ? { xs: 2, md: 2.5 } : { xs: 4, md: 6 },
+          borderRadius: "6px",
+          border: "2px dashed",
           borderColor: (theme) =>
             isDragging
               ? "#10B981"
               : !canAddMore
               ? theme.palette.divider
               : theme.palette.mode === "dark"
-              ? "rgba(16, 185, 129, 0.4)"
-              : "rgba(16, 185, 129, 0.55)",
+              ? "rgba(16, 185, 129, 0.35)"
+              : "rgba(16, 185, 129, 0.5)",
           bgcolor: (theme) =>
             isDragging
-              ? "rgba(16, 185, 129, 0.16)"
+              ? "rgba(16, 185, 129, 0.15)"
               : !canAddMore
               ? theme.palette.mode === "dark"
                 ? "rgba(15, 23, 42, 0.6)"
                 : "rgba(241, 245, 249, 0.8)"
               : theme.palette.mode === "dark"
               ? "rgba(15, 23, 42, 0.5)"
-              : "rgba(248, 250, 252, 0.9)",
+              : "rgba(248, 250, 252, 0.8)",
           cursor: disabled ? "default" : "pointer",
-          transition: "all 200ms ease",
+          transition: "all 300ms cubic-bezier(0.4, 0, 0.2, 1)",
           "&:hover": {
             borderColor: (theme) => (disabled ? theme.palette.divider : "#10B981"),
             bgcolor: (theme) =>
@@ -75,7 +76,6 @@ export function DocumentDropzone({
                   ? "rgba(15, 23, 42, 0.6)"
                   : "rgba(241, 245, 249, 0.8)"
                 : "rgba(16, 185, 129, 0.08)",
-            boxShadow: disabled ? "none" : "0 8px 30px rgba(16, 185, 129, 0.12)",
           },
         }}
       >
@@ -91,77 +91,41 @@ export function DocumentDropzone({
           }}
         />
         {isAnalyzing ? (
-          <CircularProgress sx={{ color: "#10B981" }} size={44} />
+          <CircularProgress sx={{ color: "#10B981" }} size={hasFiles ? 28 : 40} />
         ) : (
           <>
-            <Box
+            <CloudUpload
               sx={{
-                width: 72,
-                height: 72,
-                borderRadius: "50%",
-                backgroundColor: "rgba(16, 185, 129, 0.12)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                mb: 2,
-                transition: "all 200ms ease",
-                boxShadow: "0 0 20px rgba(16, 185, 129, 0.2)",
+                fontSize: hasFiles ? 30 : 56,
+                color: "#10B981",
+                mb: hasFiles ? 0.5 : 1.5,
+                transition: "all 300ms ease",
+                "&:hover": { transform: "scale(1.08)" },
               }}
-            >
-              <CloudUpload
-                sx={{
-                  fontSize: 40,
-                  color: "#10B981",
-                }}
-              />
-            </Box>
+            />
             <Typography
-              variant="h6"
+              variant="body1"
               sx={{
                 fontWeight: 700,
-                mb: 0.8,
+                mb: 0.5,
                 color: "text.primary",
                 fontFamily: '"Lexend", sans-serif',
-                fontSize: { xs: "1.05rem", md: "1.25rem" },
+                fontSize: hasFiles ? "0.88rem" : "1rem",
                 textAlign: "center",
               }}
             >
-              Kéo & thả tài liệu vào đây
+              Tải tài liệu cần dịch
             </Typography>
             <Typography
-              variant="body2"
+              variant="caption"
               sx={{
                 color: "text.secondary",
                 textAlign: "center",
-                fontSize: "0.88rem",
-                mb: 2,
+                fontSize: hasFiles ? "0.75rem" : "0.8rem",
               }}
             >
-              hoặc <span style={{ color: "#10B981", fontWeight: 600 }}>bấm vào đây</span> để chọn file từ máy tính
+              Hỗ trợ: Word, Excel, PowerPoint, PDF (Tối đa 3 file)
             </Typography>
-
-            {/* Format Chips */}
-            <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", justifyContent: "center" }}>
-              {["DOCX", "XLSX", "PPTX", "PDF"].map((fmt) => (
-                <Box
-                  key={fmt}
-                  sx={{
-                    px: 1.4,
-                    py: 0.4,
-                    borderRadius: "6px",
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === "dark" ? "rgba(255, 255, 255, 0.06)" : "rgba(0, 0, 0, 0.05)",
-                    color: "text.secondary",
-                    fontSize: "0.75rem",
-                    fontWeight: 700,
-                    fontFamily: '"Lexend", sans-serif',
-                    letterSpacing: "0.5px",
-                  }}
-                >
-                  {fmt}
-                </Box>
-              ))}
-            </Box>
           </>
         )}
       </Box>
