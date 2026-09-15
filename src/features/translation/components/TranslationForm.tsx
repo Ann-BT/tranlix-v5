@@ -43,7 +43,7 @@ export function TranslationForm() {
     <Card
       elevation={0}
       sx={{
-        borderRadius: "6px",
+        borderRadius: "12px",
         border: "1px solid",
         borderColor: "divider",
         overflow: "hidden",
@@ -55,7 +55,7 @@ export function TranslationForm() {
         color: "text.primary",
       }}
     >
-      <Box sx={{ p: { xs: 2.5, md: 4 } }}>
+      <Box sx={{ p: { xs: 3, md: 5 } }}>
         <Stack spacing={3}>
           {/* 1. Upload Document Dropzone */}
           <DocumentDropzone
