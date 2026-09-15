@@ -1,4 +1,4 @@
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { TranslationForm } from "@features/translation";
 
 export function HomePage() {
@@ -15,22 +15,6 @@ export function HomePage() {
       }}
     >
       <Container maxWidth="lg" sx={{ py: 1 }}>
-        {/* Title Header */}
-        <Box sx={{ textAlign: "center", mb: 3 }}>
-          <Typography
-            variant="h4"
-            sx={{
-              fontWeight: 800,
-              color: "text.primary",
-              fontFamily: '"Lexend", sans-serif',
-              fontSize: { xs: "1.5rem", sm: "1.9rem", md: "2.1rem" },
-              letterSpacing: "-0.5px",
-            }}
-          >
-            Dịch thuật Tài liệu Đa ngôn ngữ
-          </Typography>
-        </Box>
-
         {/* Translation Studio Component */}
         <Box sx={{ width: "100%", mx: "auto" }}>
           <TranslationForm />

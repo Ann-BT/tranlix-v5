@@ -32,7 +32,7 @@ export function AppLayout() {
         {/* Sidebar */}
         <Sidebar collapsed={sidebarCollapsed} onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)} />
         
-        {/* Scrollable Right Content Panel */}
+        {/* Scrollable Right Content Panel with Tactile Paper Texture & Noise Grain Effect */}
         <Box
           sx={{
             flexGrow: 1,
@@ -42,24 +42,22 @@ export function AppLayout() {
             overflowY: "auto",
             position: "relative",
             overflowX: "hidden",
-            backgroundColor: (theme) => (theme.palette.mode === "dark" ? "#030712" : "#F8FAFC"),
-            background: (theme) =>
-              theme.palette.mode === "dark"
-                ? "linear-gradient(135deg, #030712 0%, #0B132B 50%, #1C2541 100%)"
-                : "linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 50%, #E2E8F0 100%)",
+            backgroundColor: (theme) => (theme.palette.mode === "dark" ? "#070B12" : "#FAF8F5"),
             backgroundImage: (theme) =>
               theme.palette.mode === "dark"
                 ? `
-                  radial-gradient(circle at 15% 20%, rgba(28, 37, 65, 0.6) 0%, transparent 50%),
-                  radial-gradient(circle at 85% 70%, rgba(15, 23, 42, 0.5) 0%, transparent 50%),
-                  radial-gradient(rgba(255, 255, 255, 0.05) 1.2px, transparent 1.2px)
+                  radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 65%),
+                  radial-gradient(circle at 85% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+                  url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E"),
+                  radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px)
                 `
                 : `
-                  radial-gradient(circle at 15% 20%, rgba(203, 213, 225, 0.5) 0%, transparent 50%),
-                  radial-gradient(circle at 85% 70%, rgba(226, 232, 240, 0.6) 0%, transparent 50%),
-                  radial-gradient(rgba(0, 0, 0, 0.04) 1.2px, transparent 1.2px)
+                  radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.95) 0%, transparent 75%),
+                  radial-gradient(circle at 90% 90%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+                  url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
+                  radial-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px)
                 `,
-            backgroundSize: "100% 100%, 100% 100%, 28px 28px",
+            backgroundSize: "100% 100%, 100% 100%, 180px 180px, 24px 24px",
             color: "text.primary",
           }}
         >
