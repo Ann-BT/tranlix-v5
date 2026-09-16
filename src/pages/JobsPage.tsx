@@ -9,7 +9,7 @@ export function JobsPage() {
           variant="h5"
           sx={{
             fontWeight: 700,
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             color: "text.primary",
           }}
         >

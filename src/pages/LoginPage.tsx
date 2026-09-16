@@ -381,7 +381,7 @@ export function LoginPage() {
               variant="h5"
               sx={{
                 fontWeight: 400,
-                fontFamily: '"Fira Code", monospace',
+                fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                 color: textPrimary,
                 lineHeight: 1,
                 fontSize: "1.35rem",
@@ -431,7 +431,7 @@ export function LoginPage() {
               py: 0.8,
               px: 2.8,
               borderRadius: "4px",
-              fontFamily: '"Fira Code", monospace',
+              fontFamily: '"JetBrains Mono", "Fira Code", monospace',
               fontWeight: 700,
               fontSize: "0.9rem",
               textTransform: "none",
@@ -574,7 +574,7 @@ export function LoginPage() {
             backgroundColor: isDark ? "rgba(16,185,129,0.12)" : "#FFFFFF",
             color: isDark ? "#10B981" : "#5192B0",
             fontSize: "0.82rem", fontWeight: 700,
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             boxShadow: "0 4px 14px rgba(0,60,120,0.05)",
           }}>
             DOCX
@@ -623,7 +623,7 @@ export function LoginPage() {
               backgroundColor: isDark ? "rgba(16,185,129,0.12)" : "#FFFFFF",
               color: isDark ? "#10B981" : "#5192B0",
               fontSize: "0.8rem", fontWeight: 700,
-              fontFamily: '"Fira Code", monospace',
+              fontFamily: '"JetBrains Mono", "Fira Code", monospace',
               boxShadow: "0 4px 14px rgba(0,60,120,0.05)",
             }}>
               XLSX
@@ -634,7 +634,7 @@ export function LoginPage() {
               backgroundColor: isDark ? "rgba(16,185,129,0.06)" : "#FFFFFF",
               color: isDark ? "#6B8EB0" : "#86A8C2",
               fontSize: "0.8rem", fontWeight: 700,
-              fontFamily: '"Fira Code", monospace',
+              fontFamily: '"JetBrains Mono", "Fira Code", monospace',
               boxShadow: "0 4px 14px rgba(0,60,120,0.05)",
             }}>
               PDF
@@ -664,10 +664,10 @@ export function LoginPage() {
         }}>
           <Box sx={{
             display: "flex", gap: 0.5, alignItems: "center",
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             fontWeight: 600,
           }}>
-            <Typography component="span" sx={{ fontSize: "1.15rem", color: isDark ? "#94A3B8" : "#8AA9C1", fontFamily: '"Fira Code", monospace' }}>A</Typography>
+            <Typography component="span" sx={{ fontSize: "1.15rem", color: isDark ? "#94A3B8" : "#8AA9C1", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>A</Typography>
             <Typography component="span" sx={{ fontSize: "1.3rem", color: isDark ? "#10B981" : "#5192B0", fontWeight: 700 }}>文</Typography>
           </Box>
         </Box>
@@ -795,7 +795,7 @@ export function LoginPage() {
                     variant="h2"
                     sx={{
                       fontWeight: 400,
-                      fontFamily: '"Fira Code", monospace',
+                      fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                       fontSize: { xs: "1.8rem", sm: "2.1rem" },
                       color: textPrimary,
                       lineHeight: 1.1,
@@ -866,7 +866,7 @@ export function LoginPage() {
                           sx={{
                             fontWeight: 800,
                             color: textPrimary,
-                            fontFamily: '"Fira Code", monospace',
+                            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                             fontSize: "1.25rem",
                             letterSpacing: "-0.02em",
                           }}
@@ -977,7 +977,7 @@ export function LoginPage() {
                             sx={{
                               py: 1.4,
                               mt: 0.5,
-                              fontFamily: '"Fira Code", monospace',
+                              fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                               fontWeight: 700,
                               fontSize: "0.98rem",
                               borderRadius: "6px",
@@ -1075,13 +1075,13 @@ export function LoginPage() {
                       <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}>
                         <Typography
                           variant="caption"
-                          sx={{ fontWeight: 700, color: "#475569", fontFamily: '"Fira Code", monospace', fontSize: "0.72rem" }}
+                          sx={{ fontWeight: 700, color: "#475569", fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.72rem" }}
                         >
                           🇬🇧 ORIGINAL DOCUMENT • REF: TRX-2026/EN
                         </Typography>
                         <Typography
                           variant="caption"
-                          sx={{ color: "#64748B", fontFamily: '"Fira Code", monospace', fontWeight: 600, fontSize: "0.72rem" }}
+                          sx={{ color: "#64748B", fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontWeight: 600, fontSize: "0.72rem" }}
                         >
                           DATE: 2026-09-12
                         </Typography>
@@ -1152,7 +1152,7 @@ export function LoginPage() {
                           overflow: "hidden",
                           my: 1,
                           fontSize: "0.72rem",
-                          fontFamily: '"Fira Code", monospace',
+                          fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                         }}
                       >
                         <Box
@@ -1204,7 +1204,7 @@ export function LoginPage() {
                       <Box>
                         <Typography
                           variant="caption"
-                          sx={{ display: "block", color: "#64748B", fontWeight: 600, fontFamily: '"Fira Code", monospace', fontSize: "0.7rem" }}
+                          sx={{ display: "block", color: "#64748B", fontWeight: 600, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.7rem" }}
                         >
                           AUTHORIZED SIGNATURE
                         </Typography>
@@ -1288,13 +1288,13 @@ export function LoginPage() {
                       <Box sx={{ display: "flex", justifyContent: "space-between", mb: 1 }}>
                         <Typography
                           variant="caption"
-                          sx={{ fontWeight: 700, color: "#475569", fontFamily: '"Fira Code", monospace', fontSize: "0.72rem" }}
+                          sx={{ fontWeight: 700, color: "#475569", fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.72rem" }}
                         >
                           🇻🇳 BẢN DỊCH TIẾNG VIỆT • REF: TRX-2026/VN
                         </Typography>
                         <Typography
                           variant="caption"
-                          sx={{ color: "#64748B", fontFamily: '"Fira Code", monospace', fontWeight: 600, fontSize: "0.72rem" }}
+                          sx={{ color: "#64748B", fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontWeight: 600, fontSize: "0.72rem" }}
                         >
                           DATE: 2026-09-12
                         </Typography>
@@ -1365,7 +1365,7 @@ export function LoginPage() {
                           overflow: "hidden",
                           my: 1,
                           fontSize: "0.72rem",
-                          fontFamily: '"Fira Code", monospace',
+                          fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                         }}
                       >
                         <Box
@@ -1417,7 +1417,7 @@ export function LoginPage() {
                       <Box>
                         <Typography
                           variant="caption"
-                          sx={{ display: "block", color: "#64748B", fontWeight: 600, fontFamily: '"Fira Code", monospace', fontSize: "0.7rem" }}
+                          sx={{ display: "block", color: "#64748B", fontWeight: 600, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.7rem" }}
                         >
                           CHỮ KÝ XÁC NHẬN
                         </Typography>
@@ -1529,7 +1529,7 @@ export function LoginPage() {
                         <Typography sx={{
                           fontSize: "0.72rem",
                           fontWeight: 700,
-                          fontFamily: '"Fira Code", monospace',
+                          fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                           color: textPrimary,
                           letterSpacing: "0.2px",
                           whiteSpace: "nowrap",
@@ -1615,7 +1615,7 @@ export function LoginPage() {
               variant="h3"
               sx={{
                 fontWeight: 800,
-                fontFamily: '"Fira Code", monospace',
+                fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                 color: textPrimary,
                 fontSize: { xs: "1.5rem", md: "2.1rem" },
                 mb: 0,
@@ -1648,10 +1648,10 @@ export function LoginPage() {
               <Box sx={{ display: "flex", gap: 3, alignItems: "flex-start", flexWrap: { xs: "wrap", md: "nowrap" } }}>
                 <Box sx={{ flex: "1 1 220px" }}>
                   <TranslateOutlined sx={{ fontSize: 26, color: greenAccent, mb: 1.5, display: "block" }} />
-                  <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.1rem", mb: 0.8 }}>
+                  <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.1rem", mb: 0.8 }}>
                     Hệ thống dịch thuật đa ngôn ngữ
                   </Typography>
-                  <Typography sx={{ color: textSecondary, fontFamily: '"Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
+                  <Typography sx={{ color: textSecondary, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
                     Tối ưu cho văn bản hành chính, pháp lý và kỹ thuật chuyên ngành.
                   </Typography>
                 </Box>
@@ -1662,7 +1662,7 @@ export function LoginPage() {
                   ].map(lang => (
                     <Box key={lang} sx={{
                       px: 1.4, py: 0.4, borderRadius: "6px", fontSize: "0.76rem",
-                      fontFamily: '"Fira Code", monospace',
+                      fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                       color: greenAccent,
                       border: `1px solid ${isDark ? "rgba(16,185,129,0.3)" : "rgba(5,150,105,0.25)"}`,
                       backgroundColor: isDark ? "rgba(16,185,129,0.07)" : "rgba(5,150,105,0.05)",
@@ -1692,17 +1692,17 @@ export function LoginPage() {
                 pointerEvents: "none",
               }} />
               <ShieldOutlined sx={{ fontSize: 26, color: greenAccent, mb: 1.5, display: "block" }} />
-              <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.1rem", mb: 0.8 }}>
+              <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.1rem", mb: 0.8 }}>
                 Bảo mật On-Premise
               </Typography>
-              <Typography sx={{ color: textSecondary, fontFamily: '"Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
+              <Typography sx={{ color: textSecondary, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
                 Vận hành hoàn toàn trong hạ tầng nội bộ.
               </Typography>
               <Box sx={{ mt: "auto", pt: 3 }}>
                 {["AES-256 Encryption", "No cloud dependency", "Audit log every action", "Role-based access"].map(t => (
                   <Box key={t} sx={{ display: "flex", alignItems: "center", gap: 1.2, mb: 1.2 }}>
                     <Box sx={{ width: 5, height: 5, borderRadius: "50%", backgroundColor: greenAccent, flexShrink: 0 }} />
-                    <Typography sx={{ color: textSecondary, fontSize: "0.83rem", fontFamily: '"Fira Code", monospace' }}>{t}</Typography>
+                    <Typography sx={{ color: textSecondary, fontSize: "0.83rem", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>{t}</Typography>
                   </Box>
                 ))}
               </Box>
@@ -1717,10 +1717,10 @@ export function LoginPage() {
               border: `1px solid ${borderColor}`,
             }}>
               <DescriptionOutlined sx={{ fontSize: 26, color: greenAccent, mb: 1.5, display: "block" }} />
-              <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
+              <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
                 Bảo toàn phông chữ & bố cục
               </Typography>
-              <Typography sx={{ color: textSecondary, fontFamily: '"Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
+              <Typography sx={{ color: textSecondary, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
                 Giữ nguyên bảng biểu, hình ảnh, lề trang và định dạng cột của tài liệu gốc.
               </Typography>
             </Box>
@@ -1734,7 +1734,7 @@ export function LoginPage() {
               border: `1px solid ${borderColor}`,
             }}>
               <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
-                <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.08rem" }}>
+                <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.08rem" }}>
                   Hỗ trợ toàn diện định dạng văn bản
                 </Typography>
               </Box>
@@ -1757,8 +1757,8 @@ export function LoginPage() {
                       }}>
                         <IC sx={{ fontSize: 22, color: f.color }} />
                       </Box>
-                      <Typography sx={{ fontWeight: 700, color: textPrimary, fontSize: "0.8rem", fontFamily: '"Fira Code", monospace' }}>{f.name}</Typography>
-                      <Typography sx={{ color: greenAccent, fontSize: "0.7rem", fontFamily: '"Fira Code", monospace' }}>{f.ext}</Typography>
+                      <Typography sx={{ fontWeight: 700, color: textPrimary, fontSize: "0.8rem", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>{f.name}</Typography>
+                      <Typography sx={{ color: greenAccent, fontSize: "0.7rem", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>{f.ext}</Typography>
                     </Box>
                   );
                 })}
@@ -1777,10 +1777,10 @@ export function LoginPage() {
             }}>
               <Box>
                 <AutoAwesomeOutlined sx={{ fontSize: 26, color: greenAccent, mb: 1.5, display: "block" }} />
-                <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
+                <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
                   Thuật ngữ chuyên ngành
                 </Typography>
-                <Typography sx={{ color: textSecondary, fontFamily: '"Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
+                <Typography sx={{ color: textSecondary, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
                   Quản lý và áp dụng nhất quán từ vựng chuyên ngành cho từng phòng ban.
                 </Typography>
               </Box>
@@ -1798,10 +1798,10 @@ export function LoginPage() {
             }}>
               <Box>
                 <SpeedOutlined sx={{ fontSize: 26, color: greenAccent, mb: 1.5, display: "block" }} />
-                <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
+                <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
                   Xử lý hàng loạt
                 </Typography>
-                <Typography sx={{ color: textSecondary, fontFamily: '"Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
+                <Typography sx={{ color: textSecondary, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
                   Tải lên song song nhiều tài liệu, theo dõi tiến độ theo thời gian thực.
                 </Typography>
               </Box>
@@ -1819,10 +1819,10 @@ export function LoginPage() {
             }}>
               <Box>
                 <StorageOutlined sx={{ fontSize: 26, color: greenAccent, mb: 1.5, display: "block" }} />
-                <Typography sx={{ fontWeight: 700, fontFamily: '"Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
+                <Typography sx={{ fontWeight: 700, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: textPrimary, fontSize: "1.08rem", mb: 0.8 }}>
                   Kho lịch sử tập trung
                 </Typography>
-                <Typography sx={{ color: textSecondary, fontFamily: '"Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
+                <Typography sx={{ color: textSecondary, fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontSize: "0.88rem", lineHeight: 1.55 }}>
                   Lưu trữ và tải xuống tất cả bản dịch đã hoàn thành bất cứ lúc nào.
                 </Typography>
               </Box>
@@ -1847,7 +1847,7 @@ export function LoginPage() {
             }}>
               <Typography sx={{
                 fontWeight: 800,
-                fontFamily: '"Fira Code", monospace',
+                fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                 color: greenAccent,
                 fontSize: "1.6rem",
                 letterSpacing: "4px",
@@ -1858,7 +1858,7 @@ export function LoginPage() {
               </Typography>
               <Typography sx={{
                 color: textSecondary,
-                fontFamily: '"Fira Code", monospace',
+                fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                 fontSize: "0.88rem",
                 fontWeight: 600,
               }}>

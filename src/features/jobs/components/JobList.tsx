@@ -69,7 +69,7 @@ function JobRow({ job, onCompare }: JobRowProps) {
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell sx={{ fontWeight: 600, fontFamily: '"Fira Code", monospace', color: "text.primary" }}>
+        <TableCell sx={{ fontWeight: 600, fontFamily: '"JetBrains Mono", "Fira Code", monospace', color: "text.primary" }}>
           {job.source_filename}
         </TableCell>
         <TableCell sx={{ fontWeight: 500 }}>{formatLanguage(job.target_lang)}</TableCell>
@@ -124,7 +124,7 @@ function JobRow({ job, onCompare }: JobRowProps) {
                 gutterBottom 
                 component="div" 
                 sx={{ 
-                  fontFamily: '"Fira Code", monospace', 
+                  fontFamily: '"JetBrains Mono", "Fira Code", monospace', 
                   fontWeight: 600, 
                   color: "secondary.main", 
                   mb: 2 
@@ -309,7 +309,7 @@ export function JobList() {
       >
         <HistoryIcon sx={{ fontSize: 48, color: "text.disabled" }} />
         <Box>
-          <Typography variant="h6" sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
+          <Typography variant="h6" sx={{ fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontWeight: 600 }}>
             Lịch sử trống
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -529,7 +529,7 @@ export function JobList() {
         >
           <FilterListIcon sx={{ fontSize: 48, color: "text.disabled" }} />
           <Box>
-            <Typography variant="h6" sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
+            <Typography variant="h6" sx={{ fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontWeight: 600 }}>
               Không tìm thấy kết quả phù hợp
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
@@ -570,10 +570,10 @@ export function JobList() {
               >
                 <TableRow>
                   <TableCell sx={{ width: 60 }} />
-                  <TableCell sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"Fira Code", monospace' }}>Tên file</TableCell>
-                  <TableCell sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"Fira Code", monospace' }}>Ngôn ngữ dịch</TableCell>
-                  <TableCell sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"Fira Code", monospace' }}>Trạng thái</TableCell>
-                  <TableCell align="right" sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"Fira Code", monospace', pr: 3, width: 280, minWidth: 280 }}>Thao tác</TableCell>
+                  <TableCell sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>Tên file</TableCell>
+                  <TableCell sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>Ngôn ngữ dịch</TableCell>
+                  <TableCell sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>Trạng thái</TableCell>
+                  <TableCell align="right" sx={{ fontWeight: 700, color: "text.secondary", fontFamily: '"JetBrains Mono", "Fira Code", monospace', pr: 3, width: 280, minWidth: 280 }}>Thao tác</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>

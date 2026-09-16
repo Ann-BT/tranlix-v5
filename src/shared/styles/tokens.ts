@@ -110,8 +110,8 @@ export const borderRadius = {
 
 export const typographyTokens = {
   fontFamily: {
-    primary: '"Fira Code", monospace',
-    display: '"Fira Code", monospace',
+    primary: '"JetBrains Mono", "Fira Code", "Source Code Pro", monospace',
+    display: '"JetBrains Mono", "Fira Code", "Source Code Pro", monospace',
   },
   fontSize: {
     xs: '0.75rem',

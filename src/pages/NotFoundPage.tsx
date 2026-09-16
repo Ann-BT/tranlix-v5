@@ -45,7 +45,7 @@ export function NotFoundPage() {
           variant="h4"
           sx={{
             fontWeight: 700,
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             color: colorTokens.neutral800,
             mb: 1.5,
           }}
@@ -57,7 +57,7 @@ export function NotFoundPage() {
           variant="h6"
           sx={{
             fontWeight: 600,
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             color: colorTokens.neutral700,
             mb: 2,
           }}
@@ -69,7 +69,7 @@ export function NotFoundPage() {
           variant="body2"
           sx={{
             color: colorTokens.neutral500,
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             mb: 4,
             lineHeight: 1.5,
           }}
@@ -86,7 +86,7 @@ export function NotFoundPage() {
             py: 1.5,
             px: 4,
             borderRadius: "10px",
-            fontFamily: '"Fira Code", monospace',
+            fontFamily: '"JetBrains Mono", "Fira Code", monospace',
             fontWeight: 600,
             fontSize: "0.95rem",
             textTransform: "none",

@@ -103,7 +103,7 @@ export function ComparePage() {
       >
         <Typography
           variant="subtitle2"
-          sx={{ fontWeight: 700, color: "#FFFFFF", fontFamily: '"Fira Code", monospace' }}
+          sx={{ fontWeight: 700, color: "#FFFFFF", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}
         >
           {label}
         </Typography>
@@ -159,7 +159,7 @@ export function ComparePage() {
               variant="h6"
               sx={{
                 fontWeight: 700,
-                fontFamily: '"Fira Code", monospace',
+                fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                 color: "#FFFFFF",
                 fontSize: "1.15rem",
                 lineHeight: 1.2,
@@ -169,7 +169,7 @@ export function ComparePage() {
             </Typography>
             <Typography
               variant="caption"
-              sx={{ color: "#94A3B8", fontFamily: '"Fira Code", monospace' }}
+              sx={{ color: "#94A3B8", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}
             >
               {job.source_filename}
             </Typography>
@@ -183,7 +183,7 @@ export function ComparePage() {
             size="medium"
             sx={{
               py: 1.2, px: 3, borderRadius: "4px",
-              fontFamily: '"Fira Code", monospace', fontWeight: 700, fontSize: "0.9rem",
+              fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontWeight: 700, fontSize: "0.9rem",
               textTransform: "none", backgroundColor: "#10B981",
               color: "#FFFFFF",
               border: "none",

@@ -109,7 +109,7 @@ export function DocumentDropzone({
                 fontWeight: 700,
                 mb: 0.5,
                 color: "text.primary",
-                fontFamily: '"Fira Code", monospace',
+                fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                 fontSize: hasFiles ? "0.88rem" : "1rem",
                 textAlign: "center",
               }}

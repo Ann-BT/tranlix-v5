@@ -117,7 +117,7 @@ export function Header({ onToggleSidebar }: HeaderProps) {
                   variant="h6"
                   sx={{
                     fontWeight: 400,
-                    fontFamily: '"Fira Code", monospace',
+                    fontFamily: '"JetBrains Mono", "Fira Code", monospace',
                     color: "text.primary",
                     lineHeight: 1.1,
                     fontSize: "1.2rem",
@@ -263,7 +263,7 @@ export function Header({ onToggleSidebar }: HeaderProps) {
               >
                 <MenuItem disabled sx={{ fontSize: "0.875rem", py: 1.2, opacity: "1 !important" }}>
                   <Box sx={{ display: "flex", flexDirection: "column" }}>
-                    <Typography variant="body2" sx={{ fontWeight: 700, color: "#FFFFFF", fontFamily: '"Fira Code", monospace' }}>
+                    <Typography variant="body2" sx={{ fontWeight: 700, color: "#FFFFFF", fontFamily: '"JetBrains Mono", "Fira Code", monospace' }}>
                       {user?.fullName || "User"}
                     </Typography>
                     <Typography variant="caption" sx={{ color: "#94A3B8", fontFamily: "monospace" }}>
@@ -341,7 +341,7 @@ export function Header({ onToggleSidebar }: HeaderProps) {
     </AppBar>
 
     <Dialog open={helpOpen} onClose={() => setHelpOpen(false)} fullWidth maxWidth="sm">
-      <DialogTitle sx={{ fontFamily: '"Fira Code", monospace', fontWeight: 600 }}>
+      <DialogTitle sx={{ fontFamily: '"JetBrains Mono", "Fira Code", monospace', fontWeight: 600 }}>
         Hướng dẫn sử dụng hệ thống dịch thuật Tranlix
       </DialogTitle>
       <DialogContent dividers sx={{ pb: 3 }}>
